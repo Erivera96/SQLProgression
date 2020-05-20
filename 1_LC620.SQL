@@ -1,6 +1,6 @@
 /*
-  LeetCode # 620: Given a cinema table, find the movies that were not described as boring 
-  and only print odd ones, order by highest rating first.
+ * LeetCode # 620: Given a cinema table, find the movies that were not described as boring 
+ * and only print odd ones, order by highest rating first.
 */
 
 SELECT
