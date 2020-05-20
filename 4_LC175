@@ -1,0 +1,18 @@
+/*
+ * LeetCode # 175: Given a Person table (PersonId, FirstName, LastName) 
+ * and an Address table (AddressId, PersonId, City, State), display the
+ * information for each person regardless if they have an address (display
+ * as: FirstName, LastName, City, State)
+*/
+
+SELECT
+    p.FirstName,
+    p.LastName,
+    a.City,
+    a.State
+FROM
+    Person AS p
+LEFT OUTER JOIN
+    Address AS a
+ON
+    p.PersonId = a.PersonId
