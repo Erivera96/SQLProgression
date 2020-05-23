@@ -1,0 +1,13 @@
+/*
+ * LeetCode # 182: Given a Person table (Id, Email), find
+ * and only display those with duplicate email
+*/
+
+SELECT
+    p.Email
+FROM
+    Person AS p
+GROUP BY
+    p.Email
+HAVING 
+    COUNT(*) > 1
