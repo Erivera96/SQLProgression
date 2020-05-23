@@ -1,0 +1,20 @@
+/*
+ * LeetCode # 176: Given an Employee table (Id, Salary) find who has the second highest salary
+*/
+
+SELECT
+    CASE
+        WHEN Salary <> 
+        (
+            SELECT 
+                MAX(Salary)
+            FROM
+                Employee
+        )
+        THEN Salary
+    END AS SecondHighestSalary
+FROM
+    Employee 
+ORDER BY
+    SecondHighestSalary DESC
+LIMIT 1
